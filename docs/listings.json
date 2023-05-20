@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/Ranking/Rank_post.html",
+      "/posts/Segmentation/Segment_post.html",
+      "/posts/XAI/XAI_post.html"
+    ]
+  }
+]
