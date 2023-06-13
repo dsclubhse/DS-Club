@@ -2,5 +2,6 @@
 Тестирование
 https://dsclubhse.github.io/DS-Club/
 
-Инструкции доступны в разделе Wiki или по ссылке 📔 ⬇️
-https://github.com/dsclubhse/DS-Club/wiki
+Инструкции доступны в разделе Wiki или по [ссылке](https://github.com/dsclubhse/DS-Club/wiki) 📔
+
+
