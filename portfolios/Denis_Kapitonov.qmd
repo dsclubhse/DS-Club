@@ -1,9 +1,9 @@
 ---
 title: "Денис Капитонов"
-image: /images/cat.jpg
+image: /images/Denis.jpg
 about:
   template: solana
-  image: /images/cat.jpg
+  image: /images/Denis.jpg
   image-shape: round
   image-width: 6cm
 website:
