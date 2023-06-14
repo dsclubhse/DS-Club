@@ -2,6 +2,5 @@
 title: "Портфолио"
 listing:
   contents: portfolios
-  type: table
-  fields: [title, description]
+  type: grid
 ---
