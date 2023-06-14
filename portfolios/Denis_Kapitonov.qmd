@@ -1,9 +1,9 @@
 ---
 title: "Денис Капитонов"
+image: /images/Denis.jpg
 description: "Выпускник-социолог (2022), студент магистратуры"
 about:
   template: solana
-  image: /images/Denis.jpg
   image-shape: round
   image-width: 6cm
 website:
