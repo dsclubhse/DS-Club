@@ -1,8 +1,8 @@
 ---
 title: "Денис Капитонов"
-image: /images/Denis.jpg
+image: DS-Club/images/Denis.jpg
 about:
-  image: /images/Denis.jpg
+  image: DS-Club/images/Denis.jpg
   template: solana
   image-shape: round
   image-width: 6cm
