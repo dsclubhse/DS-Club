@@ -1,6 +1,6 @@
 ---
 title: "Денис Капитонов"
-image: /images/Denis.jpg
+image: /images/grad.jpg # Это картинка-плейсхолдер на странице с всеми портфолио
 about:
   template: solana
   image: /images/Denis.jpg
