@@ -1,5 +1,6 @@
 ---
 title: "Денис Капитонов"
+image: /images/Denis.jpg
 about:
   template: solana
   image: /images/Denis.jpg
