@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Катя, Маша, Игорь, Паша">
 <meta name="dcterms.date" content="2023-03-10">
 <meta name="description" content="Изучаем инструменты интерпретируемого ML">
 
@@ -33,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,7 +62,37 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-xai .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-xai'] = new List('listing-xai', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -84,15 +115,19 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html">
- <span class="menu-text">Обо мне</span></a>
+ <span class="menu-text">О клубе</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../projects.html">
  <span class="menu-text">Проекты</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../team.html">
- <span class="menu-text">Команда</span></a>
+    <a class="nav-link" href="../../teams.html">
+ <span class="menu-text">Команды</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolios.html">
+ <span class="menu-text">Портфолио</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -109,9 +144,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#сервисы" id="toc-сервисы" class="nav-link active" data-scroll-target="#сервисы">Сервисы</a></li>
-  <li><a href="#выводы" id="toc-выводы" class="nav-link" data-scroll-target="#выводы">Выводы</a></li>
-  <li><a href="#фидбек" id="toc-фидбек" class="nav-link" data-scroll-target="#фидбек">Фидбек</a></li>
+  <li><a href="#задание" id="toc-задание" class="nav-link active" data-scroll-target="#задание">Задание</a></li>
+  <li><a href="#решения-команд" id="toc-решения-команд" class="nav-link" data-scroll-target="#решения-команд">Решения команд</a></li>
+  <li><a href="#комментарии" id="toc-комментарии" class="nav-link" data-scroll-target="#комментарии">Комментарии</a></li>
   </ul>
 </nav>
     </div>
@@ -122,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">XAI</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Interpretable ML</div>
-    <div class="quarto-category">Heuristics</div>
+    <div class="quarto-category">XAI</div>
+    <div class="quarto-category">Inerpretability</div>
   </div>
   </div>
 
@@ -136,12 +171,6 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Катя, Маша, Игорь, Паша </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -156,18 +185,69 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="сервисы" class="level2">
-<h2 class="anchored" data-anchor-id="сервисы">Сервисы</h2>
-<p>Крутое описание</p>
+<section id="задание" class="level2">
+<h2 class="anchored" data-anchor-id="задание">Задание</h2>
+<p>Напишите эссе на тему “Расширенный искусственный интеллект (XAI): принципы работы и влияние на общество”. В своей работе необходимо рассмотреть основные принципы работы XAI, его возможности и ограничения, а также потенциальные последствия для общества, включая этические и социальные аспекты. Также необходимо проанализировать существующие примеры применения XAI в различных отраслях и оценить их эффективность.</p>
 </section>
-<section id="выводы" class="level2">
-<h2 class="anchored" data-anchor-id="выводы">Выводы</h2>
-<p>Крутое заключние</p>
+<section id="решения-команд" class="level2">
+<h2 class="anchored" data-anchor-id="решения-команд">Решения команд</h2>
+<div id="listing-xai" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1681246800000" data-listing-file-modified-sort="1686735856685" data-listing-reading-time-sort="0.615">
+<a href="../../posts/XAI/xai-solutions/xai_team1.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Команда №1
+</h5>
+<div class="card-text listing-description">
+Проект про XAI
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Катя, Маша, Игорь, Паша
+</div>
+<div class="listing-date">
+Apr 12, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1681246800000" data-listing-file-modified-sort="1686735878094" data-listing-reading-time-sort="0.61">
+<a href="../../posts/XAI/xai-solutions/xai_team2.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Команда №2
+</h5>
+<div class="card-text listing-description">
+Крутая аннотация
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Костя, Даша, Настя, Леша
+</div>
+<div class="listing-date">
+Apr 12, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
-<section id="фидбек" class="level2">
-<h2 class="anchored" data-anchor-id="фидбек">Фидбек</h2>
-<script src="https://giscus.app/client.js" data-repo="simplyigor/comments_test" data-repo-id="R_kgDOJlj_gw" data-category="Announcements" data-category-id="DIC_kwDOJlj_g84CWoYN" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="ru" crossorigin="anonymous" async="">
+<section id="комментарии" class="level2">
+<h2 class="anchored" data-anchor-id="комментарии">Комментарии</h2>
+<script src="https://giscus.app/client.js" data-repo="dsclubhse/DS-Club" data-repo-id="R_kgDOJn_Kig" data-category="Announcements" data-category-id="DIC_kwDOJn_Kis4CXNGf" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
+
 
 
 </section>

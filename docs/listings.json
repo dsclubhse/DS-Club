@@ -2,9 +2,87 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/posts/Ranking/Rank_post.html",
-      "/posts/Segmentation/Segment_post.html",
-      "/posts/XAI/XAI_post.html"
+      "/posts/XAI/XAI_post.html",
+      "/posts/Segmentation/Segment_post.html"
+    ]
+  },
+  {
+    "listing": "/posts/XAI/XAI_post.html",
+    "items": [
+      "/posts/XAI/xai-solutions/xai_team1.html",
+      "/posts/XAI/xai-solutions/xai_team2.html"
+    ]
+  },
+  {
+    "listing": "/posts/XAI_post.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Segmentation/Segment_post.html",
+    "items": [
+      "/posts/Segmentation/segment-solutions/segment_team1.html",
+      "/posts/Segmentation/segment-solutions/segment_team2.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/XAI/XAI_post.html",
+      "/posts/Segmentation/segment-solutions/team1_segment.html",
+      "/posts/XAI/xai-solutions/team1_xai.html",
+      "/posts/Segmentation/segment-solutions/team2_segment.html",
+      "/posts/XAI/xai-solutions/team2_xai.html",
+      "/posts/Segmentation/Segment_post.html"
+    ]
+  },
+  {
+    "listing": "/teams.html",
+    "items": [
+      "/posts/team1_teams.html",
+      "/posts/team2_teams.html"
+    ]
+  },
+  {
+    "listing": "/portfolios.html",
+    "items": [
+      "/portfolios/kapitonov.html"
+    ]
+  },
+  {
+    "listing": "/teams/team_1.html",
+    "items": [
+      "/teams/solutions/team_1/segment_team1.html",
+      "/teams/solutions/team_1/xai_team1.html"
+    ]
+  },
+  {
+    "listing": "/teams/groups/team_1.html",
+    "items": []
+  },
+  {
+    "listing": "/teams/groups/team1_hello.html",
+    "items": []
+  },
+  {
+    "listing": "/teams/team1_hello.html",
+    "items": [
+      "/teams/solutions/team_1/segment_team1.html",
+      "/teams/solutions/team_1/xai_team1.html"
+    ]
+  },
+  {
+    "listing": "/teams/team1_teams.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/teams/team1_teams.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/team1_teams.html",
+    "items": [
+      "/posts/Segmentation/segment-solutions/segment_team1.html",
+      "/posts/XAI/xai-solutions/xai_team1.html"
     ]
   }
 ]

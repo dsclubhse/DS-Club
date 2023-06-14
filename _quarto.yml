@@ -7,9 +7,10 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Обо мне
+        text: О клубе
       - projects.qmd # Мои проекты
-      - team.qmd # Команда
+      - teams.qmd # Команды
+      - portfolios.qmd # Портфолио
       
 format:
   html:

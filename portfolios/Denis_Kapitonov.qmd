@@ -1,0 +1,81 @@
+---
+title: "Денис Капитонов"
+about:
+  template: solana
+  image: /images/Denis.jpg
+  image-shape: round
+  image-width: 6cm
+website:
+  comments: 
+    utterances:
+      repo: dsclubhse/DS-Club
+---
+
+<a href="https://www.linkedin.com/in/deniskapitonovv"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="deniskapitonovv@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a href="https://t.me/dakapitonov"><img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white"></a>
+<a href="https://github.com/den1ceee"><img
+src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"/></a>
+
+---
+
+### 💫 Обо мне
+<br>
+Привет! Я студент 1-го курса магистерской программы ["UX-аналитика и проектирование информационных систем."](https://spb.hse.ru/ma/computer/) Люблю социологию, дизайн и статистические методы. На досуге читаю про генетику, притворяясь, что все понимаю 🤪
+
+Мои сильные стороны:
+
+-   Тку марковские одеяла
+-   Знаю чем модератор отличается от конфаундера
+-   Могу выговорить "дезоксирибонуклеиновая кислота"
+
+--- 
+
+### ⚡ Навыки
+<br>
+**Soft-скиллы:**
+
+`Storytelling`{.label} `Critical Thinking`{.label} `Empathy`{.label}
+
+**Hard-скиллы:**
+
+ `Text mining`{.label} `Supervised ML`{.label} `BA`{.label} `UX research`{.label}
+
+--- 
+
+### 💻 Tech Stack
+<br>
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![IOS](https://img.shields.io/badge/IOS-%2320232a.svg?style=for-the-badge&logo=apple&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) 
+--- 
+
+### 👨‍💻 Мои проекты
+<br>
+-   Проект №1 - [Ранжирование](projects.qmd) <br>
+-   Проект №2 - [XAI](projects.qmd) 
+--- 
+
+### 💬 Комменты!)
+<br>
+<script src="https://giscus.app/client.js"
+        data-repo="dsclubhse/DS-Club"
+        data-repo-id="R_kgDOJn_Kig"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJn_Kis4CXNGf"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
