@@ -11,6 +11,7 @@ website:
       - projects.qmd # Мои проекты
       - teams.qmd # Команды
       - portfolios.qmd # Портфолио
+      - calendar.qmd # Расписание
       
 format:
   html:
